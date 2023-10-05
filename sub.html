@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sub</title>
+
+        <!--리셋-->
+        <link href="css/reset.css" rel="stylesheet">
+
+        <!--FONT AWESOME-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- 헤더 가로길이 853 이상 -->
+        <link href="css/common-header-min-853.css" rel="stylesheet">
+
+        <!-- 헤더 가로길이 852 이하 -->
+        <link href="css/common-header-max-852.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1026 이상 -->
+        <link href="css/common-footer-min-1026.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1025 이하 -->
+        <link href="css/common-footer-max-1025.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 768 이하 -->
+        <link href="css/common-footer-max-768.css" rel="stylesheet">
+
+        <!--백그라운드 오버레이-->
+        <link href="css/background-overlay.css" rel="stylesheet">
+
+        <!--서브 가로길이 860 이하-->
+        <link href="css/sub-max-860.css" rel="stylesheet">
+
+        <!--서브 가로길이 861 이상-->
+        <link href="css/sub-min-861.css" rel="stylesheet">
+
+        <!--서브 가로길이 1260 이상-->
+        <link href="css/sub-min-1260.css" rel="stylesheet">
+
+    </head>
+
+    <style>
+
+        #sub-right {
+            width: 340px;
+            height: 60%;
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+
+        }
+
+        #sub-right > div:nth-child(n+1) {
+            width: 100%;
+            background-color: white;
+
+        }
+
+        hr {
+            width: 12%;
+            height: 4px;
+            background-color: #dba94b;
+            border: 0;
+            margin: 10px 0;
+        }
+
+        #search {
+            height: 106px;
+        }
+
+        #sub-right h4 {
+            font-size: 1.5em;
+            color: #1a1a1a;
+            font-weight: 600;
+
+        }
+
+        #search > .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+        }
+
+        #category {
+            height: 360px;
+        }
+
+        #category > ul li {
+            color: #1a1a1a;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-bottom: 1px solid gray;
+            font-size: 0.9em;
+        }
+
+        #category > ul a li::before {
+            content:"\f054";
+            font-family: Fontawesome;
+            font-weight: 100;
+            margin-right: 10px;
+        }
+
+        #category > ul a li:hover {
+            cursor: pointer;
+            color:#dba94b;
+            border-bottom: 5px solid #dba94b;
+        }
+      
+
+        #recent-post {
+            height: 516px;
+
+        }
+
+        #recent-post > .post-box {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .post-img {
+            width: 120px;
+            height: 100%;
+            margin: 20px 0;
+        }
+
+        .post-img > img {
+            height: 100%;
+            width: 100%;
+            transition-duration: 100ms;
+        }
+
+        .post-img > img:hover {
+            opacity: 0.5;
+        }
+
+        .post-box .title {
+            color: black;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            transition-duration: 100ms;
+        }
+
+        .post-box .title:hover{
+            border-bottom: 3px solid #dba94b;
+            color: #ccc;
+
+        }
+
+        .post-box .date {
+            color: black;
+            margin-left: 5px;
+        }
+
+        #SNS {
+            height: 150px;
+
+        }
+
+        #SNS ul {
+            background-color: aqua;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
+            width: 80%;
+            height: 60px;
+        }
+
+        #SNS ul li {
+            width:40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 100ms;
+        }
+
+        #SNS ul li:hover {
+            background-color: #1a1a1a;
+            opacity: 0.5;
+        }
+
+
+        #SNS > ul li:before {
+            
+            font-family: Fontawesome;
+            font-size: 24px;
+            color: #6c757d
+        }
+
+        #SNS .fb:before {
+            content:"\f09a";
+        }
+
+        #SNS .twit:before{
+            content:"\f099";
+
+        }
+        #SNS .insta::before{
+            content: "\f16d"
+
+        }
+        #SNS .pint::before{
+            content: "\f231";
+
+        }     
+        #SNS .yelp::before{
+            content: "\f1e9"
+
+        }
+        #latest-comment {
+            height: 572px;
+        }
+
+        #latest-comment ul {
+            margin-top: 30px;
+        }
+
+        #latest-comment ul li {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .subright-comment-text-box {
+            margin-left: 20px;
+            width: 240px;
+            height: auto;
+        }
+        
+
+        #latest-comment ul li p {
+            font-size: 16px;
+            color:black;
+            margin-top: 10px;
+        }
+
+        #latest-comment ul li h6 {
+            font: 14px;
+            color: #ced4da;
+            margin-top: 10px;
+        }
+
+        .comment-profile-img {
+            width: 80px;
+            height: 80px;
+
+        }
+
+        .comment-profile-img > img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        #archive {
+            height: 360px;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script>
+        $(function () {
+            $(".hamberger").click(function () {
+                $(".small-view").slideToggle();
+            });
+        });
+        $(window).resize(function () {
+            if (window.innerWidth > 853) {
+                $('.small-view').hide();
+            }
+        });
+    </script>
+    <body>
+
+        <div id="sub-contents">
+            <div id="sub-main-wrap">
+                <div id="sub-main">
+                    <div class="sub-review-box">
+                        <h4>December 27, 2020</h4>
+                        <div class="review-image-box">
+                            <img src="img/review-food1.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box">
+
+                            <h2>Try some healthy food</h2>
+                            <div class="user-comment-tag">
+                                <ul>
+                                    <a href="#">
+                                        <li>By Zayka</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>5 comment</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Food</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                            <p>
+                                Pariatur et quo nam fugiat consectetur adipisicing elit. Debitis modi, dolorem
+                                maxime dolores ducimus molestias accusantium cupiditate dolore, sint ullam
+                                beatae sit mollitia rem temporibus Lorem ipsum dolor sit amet.
+                            </p>
+                            <span class="SNS-icons">
+                                <p>Read more</p>
+                                <ul>
+                                    <li>Share:</li>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sub-review-box">
+                        <h4>December 25, 2020</h4>
+                        <div class="review-image-box">
+                            <img src="img/review-food2.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box">
+
+                            <h2>Easy Sparkling Sangria</h2>
+                            <div class="user-comment-tag">
+                                <ul>
+                                    <a href="#">
+                                        <li>By John</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>2 comment</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Food</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                            <p>
+                                Pariatur et quo nam fugiat consectetur adipisicing elit. Debitis modi, dolorem
+                                maxime dolores ducimus molestias accusantium cupiditate dolore, sint ullam
+                                beatae sit mollitia rem temporibus Lorem ipsum dolor sit amet.
+                            </p>
+                            <span class="SNS-icons">
+                                <p>Read more</p>
+                                <ul>
+                                    <li>Share:</li>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sub-review-box">
+                        <h4>December 20, 2020</h4>
+                        <div class="review-image-box">
+                            <img src="img/review-food3.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box">
+
+                            <h2>Try some healthy food</h2>
+                            <div class="user-comment-tag">
+                                <ul>
+                                    <a href="#">
+                                        <li>By Jane</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>10 comment</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Food</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                            <p>
+                                Pariatur et quo nam fugiat consectetur adipisicing elit. Debitis modi, dolorem
+                                maxime dolores ducimus molestias accusantium cupiditate dolore, sint ullam
+                                beatae sit mollitia rem temporibus Lorem ipsum dolor sit amet.
+                            </p>
+                            <span class="SNS-icons">
+                                <p>Read more</p>
+                                <ul>
+                                    <li>Share:</li>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sub-review-box">
+                        <h4>November 17, 2020</h4>
+                        <div class="review-image-box">
+                            <img src="img/review-food4.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box">
+
+                            <h2>Dealing with Fomo</h2>
+                            <div class="user-comment-tag">
+                                <ul>
+                                    <a href="#">
+                                        <li>By Ted</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>1 comment</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Food</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                            <p>
+                                Pariatur et quo nam fugiat consectetur adipisicing elit. Debitis modi, dolorem
+                                maxime dolores ducimus molestias accusantium cupiditate dolore, sint ullam
+                                beatae sit mollitia rem temporibus Lorem ipsum dolor sit amet.
+                            </p>
+                            <span class="SNS-icons">
+                                <p>Read more</p>
+                                <ul>
+                                    <li>Share:</li>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                    <a href="#">
+                                        <li></li>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="best-comment">
+                        <h3>White Wine Cheesecake</h3>
+                        <div class="user-comment-tag">
+                            <ul>
+                                <a href="#">
+                                    <li>By lingling</li>
+                                </a>
+                                <a href="#">
+                                    <li>16 comment</li>
+                                </a>
+                                <a href="#">
+                                    <li>Food</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Consectetur adipisicing elit. Debitis modi, dolorem maxime dolores pariatur et
+                            quo nam fugiat ducimus molestias accusantium cupiditate dolore, sint ullam
+                            beatae sit mollitia rem temporibus Lorem ipsum dolor sit amet.
+                        </p>
+
+                        <span></span>
+                        <blockquote>
+                            "Cupiditate veritatis lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            autem nobis magni alias dolorum ad maxime inventore! Hic voluptate temporibus
+                            maxime obcaecati qui iusto, nulla dolorem corrupti voluptatibus sequi."
+                        </blockquote>
+
+                        <p>
+                            Proin gravida nibh vel velit auctor aliquet Lorem ipsum dolor sit amet of Lorem
+                            Ipsum. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                            ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                            tincidunt pharetra.
+                        </p>
+
+                        <p>
+                            Duis sed odio sit amet nibh lorem ipsum dolor sit amet of Lorem Ipsum. Proin
+                            graelit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit
+                            amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                            pharetra.
+                        </p>
+
+                        <span class="SNS-icons">
+                            <ul>
+                                <li>Share:</li>
+                                <a href="#">
+                                    <li></li>
+                                </a>
+                                <a href="#">
+                                    <li></li>
+                                </a>
+                                <a href="#">
+                                    <li></li>
+                                </a>
+                                <a href="#">
+                                    <li></li>
+                                </a>
+                            </ul>
+                        </span>
+
+                    </div>
+                    <div id="recipe">
+                        <h3>Food Recipe</h3>
+                        <div id="recipe-img-wrap">
+
+                            <div class="recipe-img-box">
+                                <img src="img/recipe1.avif" alt="스테이크">
+                                <div class="recipe-text">
+                                    STAKE
+                                </div>
+                            </div>
+                            <div class="recipe-img-box">
+                                <img src="img/recipe2.avif" alt="파스타">
+                                <div class="recipe-text">
+                                    PASTA
+                                </div>
+                            </div>
+                            <div class="recipe-img-box">
+                                <img src="img/recipe3.avif" alt="피자">
+                                <div class="recipe-text">
+                                    PIZZA
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="forms">
+                        <h3>Comment for Us</h3>
+                        <div id="form-box">
+                            <div id="user-name">
+
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    id="user"
+                                    name="user"
+                                    placeholder="Full Name">
+
+                            </div>
+                            <div id="phone-number">
+                                <input type="text" class="form-input" id="pn" name="pn" placeholder="Number">
+
+                            </div>
+                            <div id="email-address">
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    id="email"
+                                    name="email"
+                                    placeholder="e-mail">
+                            </div>
+
+                            <div id="comment-box">
+                                <textarea rows="5" id="comment" name="text" placeholder="Comment"></textarea>
+                                <button type="submit" class="btn">book a table</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="sub-right">
+                    <div id="search">
+                        <h4>Search Here</h4>
+                        <hr>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="usrname"
+                            name="username"
+                            placeholder="search">
+                    </div>
+                    <div id="category">
+                        <h4>Categories</h4>
+                        <hr>
+                        <ul>
+                            <a href=""><li>Fast food</li></a>
+                            <a href=""><li>Floating restaurant</li></a>
+                            <a href=""><li>Food truck</li></a>
+                            <a href=""><li>Bar</li></a>
+                            <a href=""><li>Diner</li></a>
+
+                        </ul>
+                    </div>
+                    <div id="recent-post">
+                        <h4>Recent Post</h4>
+                        <hr>
+
+                        <div class="post-box">
+                            <a href=""><div class="post-img">
+                                <img src="img/review-food1.jpg">
+                            </div></a>
+
+                            <div class="post-text">
+                            <a href=""> <p class="title">Try some healthy food</p> </a>
+                                <p class="date">December 27, 2020</p>
+                            </div>
+                        </div>
+
+                        <div class="post-box">
+                            <a href=""><div class="post-img">
+                                <img src="img/review-food2.jpg">
+                            </div></a>
+
+                            <div class="post-text">
+                            <a href=""> <p class="title">Easy Sparkling Sangria</p> </a>
+                                <p class="date">December 25, 2020</p>
+                            </div>
+                        </div>
+
+                        <div class="post-box">
+                            <a href=""><div class="post-img">
+                                <img src="img/review-food3.jpg">
+                            </div></a>
+
+                            <div class="post-text">
+                            <a href=""> <p class="title">Try some healthy food</p> </a>
+                                <p class="date">December 20, 2020</p>
+                           </div>
+                        </div>
+                        <div class="post-box">
+                            <a href=""><div class="post-img">
+                                <img src="img/review-food4.jpg">
+                            </div></a>
+
+                            <div class="post-text">
+                            <a href=""> <p class="title">Dealing with Fomo</p> </a>
+                                <p class="date">November 17, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="SNS">
+                        <h4>Follow Us</h4>
+                        <hr>
+                        <ul id="sub-right-SNS-icon">
+                            <a href=""><li class="fb"></li></a>
+                            <a href=""><li class="twit"></li></a>
+                            <a href=""><li class="insta"></li></a>
+                            <a href=""><li class="pint"></li></a>
+                            <a href=""><li class="yelp"></li></a>                           
+                        </ul>
+                    </div>
+                    <div id="latest-comment">
+                        <h4> Latest Comment </h4> 
+                        <hr>
+                        <ul>
+                            <li>
+                                <div class="comment-profile-img">
+                                    <img src="img/comment1.jpg">
+                                </div>
+                                <div class="subright-comment-text-box">
+                                    <p>"This cozy restaurant has left the best impressions! I would like to come back here again and again."</p>
+                                    <h6>18 Jan, 2021 by Lisa Lynn</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="comment-profile-img">
+                                    <img src="img/comment2.jpg">
+                                </div>
+                                <div class="subright-comment-text-box">
+                                    <p>"It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service."</p>
+                                    <h6>8 Jan, 2021 by Jone Doe</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="comment-profile-img">
+                                    <img src="img/comment3.jpg">
+                                </div>
+                                <div class="subright-comment-text-box">
+                                    <p>"This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. Highly recommended."</p>
+                                    <h6>1 Dec, 2020 by Rosy J</h6>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="archive">
+                        <h4>Archives</h4>
+                        <hr>
+                        <ul>
+                            <a href=""><li>
+                                December
+                            </li></a>
+                            <a href=""><li>
+                                November
+                            </li></a>
+                            <a href=""><li>
+                                October
+                            </li></a>
+                            <a href=""><li>
+                                September
+                            </li></a>
+                            <a href=""><li>
+                                August
+                            </li></a>
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="info">
+                <div class="infobox">
+                    <div id="footer-logo">
+                        <img src="img/logoSVG.svg" alt="로고">
+                    </div>
+                    <p>Egestas sit in lobortis duis viverra enim eros ornare. Et tincidunt pretium
+                        curabitur vehicula turpis adipiscing donec. Et ut morbi magna quis purus
+                        aliquet.</p>
+
+                    <ul id="SNS-icon">
+                        <li>
+                            <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitter.png" alt="트위터"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/youtube.png" alt="유투브"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/instagram.png" alt="인스타그램"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/yelp.png" alt="옐프"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="infobox">
+                    <h1>Our Location</h1>
+
+                    <p>3 E 19th St, 123 Fifth Avenue,
+                        <br>
+                        NY 10160, New York, USA
+                        <br>
+                        1 234 567 890
+                    </p>
+
+                    <a href="#">
+                        <div id="destination">
+                            <img src="img/destination-white.png" alt="목적지 아이콘">
+                            <span>Get Direction</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="infobox">
+                    <h1>
+                        Quick link</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infobox">
+                    <h1>Opening Hours</h1>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>
+                                Sunday to Wednesday</dd>
+                            <dd>9AM - 10:30PM</dd>
+                        </dl>
+                    </div>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>Thursday to Saturday</dd>
+                            <dd>9AM - 12:30AM</dd>
+                        </dl>
+                    </div>
+                    <a href="">
+                        <button class="reserve" type="button">RESERVATION</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sign">
+                <div id="signbox">
+                    <span class="copyright" ">Copyright © 2023 Deli Restaurant</span>
+                    <span class="poweredby">Powered by Deli Restaurant</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

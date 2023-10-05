@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sub</title>
+
+        <link href="css/reset.css" rel="stylesheet">
+
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- 헤더 가로길이 853 이상 -->
+        <link href="css/common-header-min-853.css" rel="stylesheet">
+
+        <!-- 헤더 가로길이 852 이하 -->
+        <link href="css/common-header-max-852.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1026 이상 -->
+        <link href="css/common-footer-min-1026.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1025 이하 -->
+        <link href="css/common-footer-max-1025.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 768 이하 -->
+        <link href="css/common-footer-max-768.css" rel="stylesheet">
+
+        <!--백그라운드 오버레이-->
+        <link href="css/background-overlay.css" rel="stylesheet">
+
+    </head>
+
+    <style>
+        #sub-contents {
+            width: 100%;
+            height: 4950px;
+            background-color: aqua;
+        }
+
+        #sub-main-wrap {
+            width: 1260px;
+            height: 100%;
+            background-color: white;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #sub-main {
+            width: 850px;
+            height: 100%;
+            background-color: blue;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+
+        }
+
+
+
+        #sub-main > .sub-review-box {
+            width: 100%;
+            height: 780px;
+            background-color: white;
+
+        }
+
+
+        #sub-main > #best-comment {
+            width:100%;
+            height:560px;
+            background-color: darkcyan;
+        }
+
+        #sub-main > #recipe {
+            width: 100%;
+            height: 280px;
+            background-color: beige;
+        
+        }
+
+        #sub-main > #forms {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+        }
+
+
+
+
+         #sub-right {
+            width: 340px;
+            height: 60%;
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+
+        }
+
+        #sub-right > div:nth-child(n+1){
+            width:100%;
+            background-color: red;
+
+        }
+
+        #search {
+            height: 106px;
+
+        }
+
+        #category {
+            height: 360px;
+
+        }
+
+        #recent-post {
+            height: 516px;
+
+        }
+
+        #SNS {
+            height: 150px;
+
+        }
+
+        #latest-comment {
+            height: 572px;
+
+        }
+
+        #archive {
+            height: 360px;
+
+        }
+        
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script>
+        $(function () {
+            $(".hamberger").click(function () {
+                $(".small-view").slideToggle();
+            });
+        });
+        $(window).resize(function () {
+            if (window.innerWidth > 853) {
+                $('.small-view').hide();
+            }
+        });
+    </script>
+    <body>
+
+        <div id="sub-contents">
+            <div id="sub-main-wrap">
+                <div id="sub-main">
+                    <div class="sub-review-box">
+                        <div class="review-image-box">
+                            <img src="img/review-food1.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box"></div>
+                    </div>
+                    <div class="sub-review-box">
+                        <div class="review-image-box">
+                            <img src="img/review-food2.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box"></div>
+                    </div>
+                    <div class="sub-review-box">
+                        <div class="review-image-box">
+                            <img src="img/review-food3.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box"></div>
+                    </div>
+                    <div class="sub-review-box">
+                        <div class="review-image-box">
+                            <img src="img/review-food4.jpg" alt="음식사진">
+                        </div>
+                        <div class="review-text-box"></div>
+                    </div>
+                    <div id="best-comment"></div>
+                    <div id="recipe"></div>
+                    <div id="forms"></div>
+                </div>
+                <div id="sub-right">
+                    <div id="search"></div>
+                    <div id="category"></div>
+                    <div id="recent-post"></div>
+                    <div id="SNS"></div>
+                    <div id="latest-comment"></div>
+                    <div id="archive"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="info">
+                <div class="infobox">
+                    <div id="footer-logo">
+                        <img src="img/logoSVG.svg" alt="로고">
+                    </div>
+                    <p>Egestas sit in lobortis duis viverra enim eros ornare. Et tincidunt pretium
+                        curabitur vehicula turpis adipiscing donec. Et ut morbi magna quis purus
+                        aliquet.</p>
+
+                    <ul id="SNS-icon">
+                        <li>
+                            <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitter.png" alt="트위터"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/youtube.png" alt="유투브"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/instagram.png" alt="인스타그램"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/yelp.png" alt="옐프"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="infobox">
+                    <h1>Our Location</h1>
+
+                    <p>3 E 19th St, 123 Fifth Avenue,
+                        <br>
+                        NY 10160, New York, USA
+                        <br>
+                        1 234 567 890
+                    </p>
+
+                    <a href="#">
+                        <div id="destination">
+                            <img src="img/destination-white.png" alt="목적지 아이콘">
+                            <span>Get Direction</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="infobox">
+                    <h1>
+                        Quick link</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infobox">
+                    <h1>Opening Hours</h1>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>
+                                Sunday to Wednesday</dd>
+                            <dd>9AM - 10:30PM</dd>
+                        </dl>
+                    </div>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>Thursday to Saturday</dd>
+                            <dd>9AM - 12:30AM</dd>
+                        </dl>
+                    </div>
+                    <a href="">
+                        <button class="reserve" type="button">RESERVATION</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sign">
+                <div id="signbox">
+                    <span class="copyright" ">Copyright © 2023 Deli Restaurant</span>
+                    <span class="poweredby">Powered by Deli Restaurant</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

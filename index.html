@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NYUS</title>
+
+        <!--리셋-->
+        <link href="css/reset.css" rel="stylesheet">
+
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- 헤더 가로길이 853 이상 -->
+        <link href="css/common-header-min-853.css" rel="stylesheet">
+
+        <!-- 헤더 가로길이 852 이하 -->
+        <link href="css/common-header-max-852.css" rel="stylesheet">
+
+        <!--슬라이더 가로길이 768이하-->
+        <link href="css/slider-min-769.css" rel="stylesheet">
+
+        <!--슬라이더 가로길이 769이상-->
+        <link href="css/slider-max-768.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1026 이상 -->
+        <link href="css/common-footer-min-1026.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 1025 이하 -->
+        <link href="css/common-footer-max-1025.css" rel="stylesheet">
+
+        <!-- 푸터 가로길이 768 이하 -->
+        <link href="css/common-footer-max-768.css" rel="stylesheet">
+
+        <!-- 메인 가로길이 768 이하 -->
+        <link href="css/main-max-768.css" rel="stylesheet">
+
+        <!-- 메인 가로길이 769 이상 -->
+        <link href="css/main-min-769.css" rel="stylesheet">
+
+        <!--백그라운드 오버레이-->
+        <link href="css/background-overlay.css" rel="stylesheet">
+
+
+
+
+        <style></style>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script>
+            $(function () {
+                $(".hamberger").click(function () {
+                    $(".small-view").slideToggle();
+                });
+            });
+            $(window).resize(function () {
+                if (window.innerWidth > 853) {
+                    $('.small-view').hide();
+                }
+            });
+            
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="header-big">
+                <a href="">
+                    <div class="logo">
+                        <img src="img/logoSVG.svg" alt="로고">
+                    </div>
+                </a>
+                <nav class="wide-view">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Menu</a>
+                        </li>
+
+                        <li>
+                            <a href="">Testimonial</a>
+                        </li>
+
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <button class="reserve" type="button">RESERVATION</button>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="hamberger">
+                    <img src="img/hamberger.png" alt="모바일 화면 토글 아이콘">
+                </div>
+            </div>
+            <nav class="small-view">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</li>
+                        <li>
+                            <a href="">Menu</a>
+                        </li>
+                        <li>
+                            <a href="">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+            <div id="front-background">
+                <div class="background-overlay"></div>
+
+                <div id="slider">
+                    <div id="slider-widget">
+                        <h4>GOOD PLACE, GOOD FOOD</h4>
+                        <h1>A Really Good Place To Eat In The City Of New York</h1>
+                        <h6>Massa praesent sit suspendisse ac volutpat amet. Commodo elit at non neque
+                            ullamcorper id.</h6>
+                    </div>
+                </div>
+            </div>
+
+            <section id="main">
+                <div id="main-box">
+                    <div class="box-in-box">
+                        <h2>Discover The Good Atmosphere Of NYUS.</h2>
+                        <p>Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum
+                            tincidunt a scelerisque consectetur ultrices elementum pulvinar non. Leo ut id
+                            vel nec nisi odio nisi. Auctor egestas nibh augue enim, ornare blandit. Purus
+                            augue sagittis, risus phasellus egestas ipsum.</p>
+                        <img src="img/good-vibes.jpg" alt="식당내부전경 첫 번째">
+                        <h5>Good Vibes</h5>
+                        <p>In total 650m² of hand-crafted decor, mix of styles and colors.</p>
+                        <img src="img/bg-image-cake-and-coffee.png" alt="커피와 케이크 사진" class="bg-coffe">
+
+                    </div>
+                    <div class="box-in-box">
+                        <img src="img/cozy-place.jpg" alt="식당내부전경 두 번째">
+                        <h5>Cozy Place</h5>
+                        <p>To make everyone entering the establishment feel at home and find their
+                            atmosphere.</p>
+                        <img src="img/relax-atmosphere.jpg" alt="식당내부전경 세 번째">
+                        <h5>Relax Atmosphere</h5>
+                        <p>Take refuge in our exclusive haven of greenery and away from the crowds. Live
+                            music and performances every Friday night!</p>
+
+                    </div>
+                </div>
+            </section>
+            <section id="menu">
+                <div id="menu-box">
+
+                    <h6>OUR MENU</h6>
+                    <div class="dividing-letter">
+
+                        <div class="divider"></div>
+                        <h2>
+                            Get Relax. Eat.</h2>
+                        <div class="divider"></div>
+
+                    </div>
+
+                    <div id="menu-front-letter">
+                        Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum
+                        tincidunt a scelerisque consectetur ultrices elementum pulvinar non.
+                    </div>
+
+                    <div id="menu-box-wrap">
+
+                        <div class="box-in-menu-box">
+                            <h6>LEMON AND GARLIC GREEN BEANS - 15.00</h6>
+                            <p>Lemon / Garlic / Beans</p>
+
+                            <h6>BACON-WRAPPED SHRIMP WITH GARLIC - 21.50</h6>
+                            <p>Bacon / Shrimp / Garlic</p>
+
+                            <h6>LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI - 18.50</h6>
+                            <p>Lamb / Wine / Butter</p>
+
+                            <h6>IMPORTED OYSTERS GRILL (5 PIECES) - 20.00</h6>
+                            <p>Oysters / Veggie / Ginger</p>
+
+                        </div>
+
+                        <div class="box-in-menu-box">
+                            <h6>LEMON AND GARLIC GREEN BEANS - 15.00</h6>
+                            <p>Lemon / Garlic / Beans</p>
+
+                            <h6>BACON-WRAPPED SHRIMP WITH GARLIC - 21.50</h6>
+                            <p>Bacon / Shrimp / Garlic</p>
+
+                            <h6>LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI - 18.50</h6>
+                            <p>Lamb / Wine / Butter</p>
+
+                            <h6>IMPORTED OYSTERS GRILL (5 PIECES) - 20.00</h6>
+                            <p>Oysters / Veggie / Ginger</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section id="signature">
+                <div class="signature-box">
+                    <h6>HOMEMADE</h6>
+                    <h2>Signature Menu</h2>
+                    <div id="signature-letter">
+                        Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum
+                        tincidunt a scelerisque consectetur ultrices elementum pulvinar non.
+                    </div>
+                </div>
+                <div class="background-overlay"></div>
+            </section>
+
+            <section id="photo-zone">
+                <div id="photo-wrap">
+                    <div class="photo-box">
+                        <img src="img/photo1.jpg" alt="음식사진 와인과 스테이크">
+                    </div>
+                    <div class="photo-box">
+                        <img src="img/photo2.jpg" alt="음식사진 햄버거와 감자튀김">
+                    </div>
+                    <div class="photo-box">
+                        <img src="img/photo3.jpg" alt="맥주잔으로 건배하는 사진">
+                    </div>
+                    <div class="photo-box">
+                        <img src="img/photo4.jpg" alt="식당전경">
+                    </div>
+                    <div class="photo-box">
+                        <img src="img/photo5.jpg" alt="한식 밥상과 비빔밥 사진">
+                    </div>
+                    <div class="photo-box">
+                        <img src="img/photo6.jpg" alt="주방에서 요리하는 사진"></imgs>
+                </div>
+            </div>
+        </section>
+
+        <section id="staff">
+            <div id="staff-box">
+                <div class="box-in-staff-box">
+                    <h2>Meet The Team Of NYUS</h2>
+                    <div class="staff-text">
+                        Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum
+                        tincidunt a scelerisque consectetur ultrices elementum pulvinar non. Leo ut id
+                        vel nec nisi odio nisi. Auctor egestas nibh augue enim, ornare blandit.
+                    </div>
+                    <img src="img/staff1.jpg" alt="직원이 음식을 들고 있음">
+                </div>
+                <div class="box-in-staff-box">
+                    <img src="img/staff2.jpg" alt="직원이 음료를 들고 있음.">
+                    <img src="img/staff3.jpg" alt="직원이 음식을 들고 있음.">
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="review">
+            <div id="background-box">
+                <div class="background-overlay"></div>
+            </div>
+            <div id="review-box">
+                <h6>Testimonial</h6>
+                <h2>
+                    What They Said</h2>
+
+                <div class="box-in-review-box">
+                    <div class="profile-img-box">
+                        <img src="img/reviewman-1.png" alt="리뷰어 얼굴사진">
+                    </div>
+                    <div class="review-text-box">
+                        Rhoncus risus donec neque egestas ultrices ullamcorper cursus aliquam nunc. Cras
+                        est sit libero, est in scelerisque donec. Tincidunt malesuada odio neque et vel
+                        fringilla elit. Placerat turpis mus donec id vel.
+                        <h3 class="names">EMMA ODINSON</h3>
+                    </div>
+                </div>
+                <div class="box-in-review-box">
+                    <div class="profile-img-box">
+                        <img src="img/reviewman-2.png" alt="리뷰어 얼굴사진">
+                    </div>
+                    <div class="review-text-box">
+                        Rhoncus risus donec neque egestas ultrices ullamcorper cursus aliquam nunc. Cras
+                        est sit libero, est in scelerisque donec. Tincidunt malesuada odio neque et vel
+                        fringilla elit. Placerat turpis mus donec id vel.
+                        <h3 class="names">DIAN ANNAKIN</h3>
+                    </div>
+
+                </div>
+                <div class="box-in-review-box">
+                    <div class="profile-img-box">
+                        <img src="img/reviewman-3.png" alt="리뷰어 얼굴사진">
+                    </div>
+                    <div class="review-text-box">
+                        Rhoncus risus donec neque egestas ultrices ullamcorper cursus aliquam nunc. Cras
+                        est sit libero, est in scelerisque donec. Tincidunt malesuada odio neque et vel
+                        fringilla elit. Placerat turpis mus donec id vel.
+                        <h3 class="names">KYLE SMITH</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="reservation">
+            <div id="reservation-box">
+                <h2>Reservation</h2>
+                <div class="reversation-text">
+                    Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum
+                    tincidunt a scelerisque consectetur ultrices elementum pulvinar non.
+                </div>
+                <button class="reserve" type="button">RESERVATION</button>
+                <span>TELEPHONE RESERVATION</span>
+                <h3>12 34 56 7890</h3>
+
+            </div>
+            <div class="overlay-image">
+                <img src="img/waffle-overlay.png">
+            </div>
+        </section>
+
+        <footer>
+            <div id="info">
+                <div class="infobox">
+                    <div id="footer-logo">
+                        <img src="img/logoSVG.svg" alt="로고">
+                    </div>
+                    <p>Egestas sit in lobortis duis viverra enim eros ornare. Et tincidunt pretium
+                        curabitur vehicula turpis adipiscing donec. Et ut morbi magna quis purus
+                        aliquet.</p>
+
+                    <ul id="SNS-icon">
+                        <li>
+                            <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitter.png" alt="트위터"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/youtube.png" alt="유투브"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/instagram.png" alt="인스타그램"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/yelp.png" alt="옐프"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="infobox">
+                    <h1>Our Location</h1>
+
+                    <p>3 E 19th St, 123 Fifth Avenue,
+                        <br>
+                        NY 10160, New York, USA
+                        <br>
+                        1 234 567 890
+                    </p>
+
+                    <a href="#">
+                        <div id="destination">
+                            <img src="img/destination-white.png" alt="목적지 아이콘">
+                            <span>Get Direction</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="infobox">
+                    <h1>
+                        Quick link</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infobox">
+                    <h1>Opening Hours</h1>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>
+                                Sunday to Wednesday</dd>
+                            <dd>9AM - 10:30PM</dd>
+                        </dl>
+                    </div>
+                    <div class="hours">
+                        <img src="img/clock.png" alt="시계">
+                        <dl>
+                            <dd>Thursday to Saturday</dd>
+                            <dd>9AM - 12:30AM</dd>
+                        </dl>
+                    </div>
+                    <a href="">
+                        <button class="reserve" type="button">RESERVATION</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sign">
+                <div id="signbox">
+                    <span class="copyright" ">Copyright © 2023 Deli Restaurant</span>
+                    <span class="poweredby">Powered by Deli Restaurant</span>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
