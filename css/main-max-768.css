@@ -1,0 +1,471 @@
+@charset "utf-8";
+
+@media (max-width:768px){
+
+    
+    #main {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display:flex;
+        align-items:center;
+    }
+
+    #main > #main-box {
+        
+        width: 1200px;
+        height: auto;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        margin:0 auto;
+
+    }
+
+    #main > #main-box > .box-in-box {
+        width:100%;
+        height:auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+    
+
+    #main > #main-box >.box-in-box > h2,p,h5,img{
+        width:86.7%;
+        height: auto;
+    }
+
+
+    #main > #main-box >.box-in-box > img {
+        margin-bottom:20px; 
+
+    }
+    #main > #main-box >.box-in-box > h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > p {
+        font-size: 14px;
+        margin-bottom: 34px;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > h5 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > .bg-coffe{
+        width:90%;
+        height:37%;
+        margin-top:15%;
+    }
+
+    #menu > p,h1,h2,h3,h4,h5,h6,span,div {
+        color:white
+    }
+
+    #menu {
+        width: 100%;
+        height: auto;
+        background-color: #1a1a1a;
+        display: flex;
+        align-items: center;
+    }
+
+    #menu >#menu-box {
+        margin:0 auto;
+        width:1200px;
+        height:auto; 
+        background-color:#1a1a1a;
+
+
+    }
+
+    #menu > #menu-box > h6{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #menu > #menu-box > .dividing-letter {
+        width: 100%;
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu > #menu-box > .dividing-letter> .divider {
+        display: none;
+    }
+
+    #menu > #menu-box > .dividing-letter > h2 {
+        width:32%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #menu > #menu-box > #menu-front-letter {
+        padding-top: 5%;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+
+    }
+
+    #menu > #menu-box > #menu-box-wrap {
+
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box {
+        width:100%;
+        height:auto;
+        background-color:#1a1a1a;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box > h6 {
+        font-size: 13px;
+        color: white;
+        align-self: center;
+
+    }
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box > p {
+        margin-bottom: 13px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        color:#7a7a7a;
+        border-bottom: 1px dashed #7a7a7a;
+        height: 8%;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    
+
+
+
+    #signature {
+        width: 100%;
+        height: auto;
+        background-image: url("../img/signeture-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+
+    #signature > .signature-box {
+        width: 100%;
+        height: auto;
+        margin-left:5%;
+        z-index: 5;
+        
+    }
+
+    #signature > .signature-box > h6 {
+        width: 50%;
+        height: auto;
+        font-size: 13px;
+        color: white;
+        padding-bottom: 26px;
+    }
+
+    #signature > .signature-box > h2 {
+        width: 50%;
+        height: auto;
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 13px;
+        z-index: 5;
+
+    }            
+
+    #signature > .signature-box > #signature-letter{
+        width: 50%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    
+    #photo-zone {
+        width: 100%;
+        height: 1066px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-wrap {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+
+    }
+
+    .photo-box {
+        width: 45%;
+        height: 40%;
+        margin: 1%;
+    }
+
+    .photo-box> img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #staff {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #staff > #staff-box {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #staff > #staff-box > .box-in-staff-box{
+        width:100%;
+        height: 100%;
+        margin-bottom: 5%;
+        
+    }
+
+    #staff > #staff-box > .box-in-staff-box > h2 {
+        color: black;
+        padding-bottom: 0.7em;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    #staff > #staff-box > .box-in-staff-box > .staff-text {
+        color: black;
+        padding-bottom: 2em;
+        font-size: 16px;
+        height: auto;
+    }
+
+    #staff > #staff-box > .box-in-staff-box:first-child > img {
+        width: 100%;
+        height: 69%;
+    }
+
+    #staff > #staff-box > .box-in-staff-box:last-child > img:nth-of-type(1) {
+        
+        width:100%;
+        height: 42%;
+
+    }
+
+    #staff > #staff-box > .box-in-staff-box:last-child > img:nth-of-type(2) {
+        margin:5%;
+        width:90%;
+        height: 50%;
+
+    }
+
+    #review {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    #review > #background-box {
+        width: 100%;
+        height: 80%;
+        background-image: url("../img/review-bg.jpg");
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #review > #review-box {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #review > #review-box > h6 {
+        font-size: 1em;
+        height: 1em;
+        font-weight: bold;
+
+    }
+
+    #review > #review-box > h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        height: auto;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #review > #review-box > .box-in-review-box {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #review > #review-box > .box-in-review-box > .review-text-box {
+        width:80%;
+        height:auto;
+        background-color: black;
+        text-align: center;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    #review > #review-box > .box-in-review-box > .review-text-box > h3 {
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    #review > #review-box > .box-in-review-box > .profile-img-box {
+    
+        width:80px;
+        height: 80px;
+        border:3px solid #f5c61c;
+        border-radius: 50%;
+    }
+
+    #review > #review-box > .box-in-review-box > .profile-img-box > img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    
+    #reservation {
+        width: 100%;
+        height: auto;
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #reservation-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #reservation-box > h2 {
+        margin-top: 2%;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+    }
+
+    #reservation-box > .reversation-text {
+        margin-top: 2%;
+        text-align: center;
+        font-size: 13px;
+        color: #1a1a1a;
+        width: 50%;
+        height: auto;
+    }
+
+    #reservation-box > .reserve {
+        margin-top: 2%;
+        height: 43px;
+        width: 155px;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        font-size: 12px;
+        padding: 12px 24px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    #reservation-box > .reserve:hover {
+        color: white;
+        background-color: black;
+    }
+
+    #reservation-box > span {
+        margin-top: 2%;
+        color: black;
+        font-size: 1.2em;
+    }
+
+    #reservation-box > h3 {
+        margin-top: 2%;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+
+    }
+    
+
+
+    #reservation > .overlay-image {
+        width:10%;
+        height: 10vw;
+        position: absolute;
+        left:90%;
+    }
+
+    #reservation > .overlay-image >img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}

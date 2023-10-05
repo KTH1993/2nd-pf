@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@media (min-width:769px){
+
+    
+
+    #main {
+        width: 100%;
+        height: 1210px;
+        background-color: white;
+        display:flex;
+        align-items:center;
+    }
+
+    #main > #main-box {
+        
+        width: 1200px;
+        height: 1001.5px;
+        background-color: white;
+        display:flex;
+        margin:0 auto;
+
+    }
+
+    #menu > #menu-box > h6{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+
+    #main > #main-box > .box-in-box {
+        width:50%;
+        height:100%;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    #main > #main-box > .box-in-box:nth-of-type(1){
+     align-items: flex-start;
+    }
+
+    #main > #main-box > .box-in-box:nth-of-type(2){
+    align-items: flex-end;
+    }
+
+    #main > #main-box >.box-in-box > h2,p,h5,img{
+        width:86.7%;
+        height: auto;
+    }
+
+
+    #main > #main-box >.box-in-box > img {
+        margin-bottom:20px; 
+
+    }
+    #main > #main-box >.box-in-box > h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > p {
+        font-size: 14px;
+        margin-bottom: 34px;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > h5 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: black;
+    }
+
+    #main > #main-box >.box-in-box > .bg-coffe{
+        width:90%;
+        height:37%;
+        margin-top:15%;
+        z-index: 1;
+    }
+
+    #menu > p,h1,h2,h3,h4,h5,h6,span,div {
+        color:white
+    }
+
+    #menu {
+        width: 100%;
+        height: 887px;
+        display: flex;
+        align-items: center;
+        background-color: #1a1a1a;
+        
+
+    }
+
+    #menu >#menu-box {
+        margin:0 auto;
+        width:1200px;
+        height:680px; 
+        background-color:#1a1a1a;
+
+
+    }
+
+    #menu > #menu-box > h6{
+        margin: 0 auto;
+    }
+
+    #menu > #menu-box > .dividing-letter {
+        width: 100%;
+        display: flex;
+        height:auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    #menu > #menu-box > .dividing-letter> .divider {
+        width:34%;
+        border-top: 1px solid white;
+        height: 1px;
+        margin: 15px 0;
+        background-color: aqua;
+
+    }
+
+    #menu > #menu-box > .dividing-letter > h2 {
+        width:32%;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #menu > #menu-box > #menu-front-letter {
+        margin: 0 auto;
+        width: 50%;
+        height: 10%;
+
+    }
+
+    #menu > #menu-box > #menu-box-wrap {
+
+        width: 100%;
+        height: 54%;
+        background-color: white;
+        display: flex;
+    }
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box {
+        width:50%;
+        height:100%;
+        background-color:#1a1a1a;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box > h6 {
+        font-size: 13px;
+        color: white;
+
+    }
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box > p {
+        margin-bottom: 13px;
+        font-size: 16px;
+        color:#7a7a7a;
+        border-bottom: 1px dashed #7a7a7a;
+        height: 8%;
+        width: 100%;
+    }
+
+    #menu > #menu-box> #menu-box-wrap > .box-in-menu-box > h6:first-child {
+        margin-top: 12%;
+    }
+
+    
+
+    #signature {
+        width: 100%;
+        height: 350px;
+        background-image: url("../img/signeture-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+
+    #signature > .signature-box {
+        width: 1200px;
+        height: 167px;
+        margin: 0 auto;
+        z-index: 5;
+    }
+
+    #signature > .signature-box > h6 {
+        width: 50%;
+        height: auto;
+        font-size: 13px;
+        color: white;
+        padding-bottom: 26px;
+    }
+
+    #signature > .signature-box > h2 {
+        width: 50%;
+        height: auto;
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 13px;
+        z-index: 5;
+
+    }            
+
+    #signature > .signature-box > #signature-letter{
+        width: 50%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    
+    #photo-zone {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-wrap {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-between;
+
+    }
+
+    .photo-box {
+        width: 30%;
+        height: 30%;
+        padding: 1.5%;
+    }
+
+    .photo-box> img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #staff {
+        width: 100%;
+        height: 1522px;
+        display: flex;
+        align-items: center;
+    }
+
+    #staff > #staff-box {
+        margin: 0 auto;
+        width: 1200px;
+        height: 1305px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #staff > #staff-box > .box-in-staff-box{
+        width:50%;
+        height: 100%;
+        
+    }
+
+    #staff > #staff-box > .box-in-staff-box > h2 {
+        color: black;
+        padding-bottom: 0.7em;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    #staff > #staff-box > .box-in-staff-box > .staff-text {
+        color: black;
+        padding-bottom: 2em;
+        font-size: 16px;
+        height: auto;
+    }
+
+    #staff > #staff-box > .box-in-staff-box:first-child > img {
+        width: 100%;
+        height: 69%;
+    }
+
+    #staff > #staff-box > .box-in-staff-box:last-child > img:nth-of-type(1) {
+        margin-left:10%;
+        width:60%;
+        height: 42%;
+
+    }
+
+    #staff > #staff-box > .box-in-staff-box:last-child > img:nth-of-type(2) {
+        margin-left:10%;
+        margin-top: 8%;
+        width:90%;
+        height: 50%;
+
+    }
+
+    #review {
+        margin: 0 auto;
+        width: 100%;
+        height: 640px;
+        display: flex;
+        position: relative;
+
+    }
+
+    #review > #background-box {
+        width: 100%;
+        height: 80%;
+        background-image: url("../img/review-bg.jpg");
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #review > #review-box {
+        margin: 0 auto;
+        width: 1200px;
+        height: 510px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #review > #review-box > h6 {
+        font-size: 1em;
+        height: 1em;
+        font-weight: bold;
+
+    }
+
+    #review > #review-box > h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        height: auto;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #review > #review-box > .box-in-review-box {
+        width: 33.3%;
+        height: 71%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #review > #review-box > .box-in-review-box > .review-text-box {
+        width:95%;
+        height: 80%;
+        background-color: #1a1a1a;
+        text-align: center;
+        padding-top:20%;
+        border-radius: 12px 12px 12px
+    }
+
+    #review > #review-box > .box-in-review-box > .review-text-box > h3 {
+        font-weight: bold;
+        margin-top:15%;
+    }
+
+    #review > #review-box > .box-in-review-box > .profile-img-box {
+    
+        width:80px;
+        height: 80px;
+        border:3px solid #f5c61c;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+    }
+
+    #review > #review-box > .box-in-review-box > .profile-img-box > img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #reservation {
+        width: 100%;
+        height: 546px;
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #reservation-box {
+        width: 640px;
+        height: 342px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #reservation-box > h2 {
+
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+    }
+
+    #reservation-box > .reversation-text {
+        text-align: center;
+        font-size: 13px;
+        color: #1a1a1a;
+        width: 100%;
+        height: auto;
+    }
+
+    #reservation-box > .reserve {
+        height: 43px;
+        width: 155px;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        font-size: 12px;
+        padding: 12px 24px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    #reservation-box > .reserve:hover {
+        color: white;
+        background-color: black;
+    }
+
+    #reservation-box > span {
+        color: black;
+        font-size: 1.2em;
+    }
+
+    #reservation-box > h3 {
+        
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+
+    }
+    #reservation > .overlay-image {
+        width:10%;
+        padding-top: 10%;
+        position: absolute;
+        left:90%;
+    }
+
+    #reservation > .overlay-image >img {
+        width: 100%;
+        height: 100%;
+    }
+
+}

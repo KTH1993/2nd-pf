@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* 헤더 가로길이 852 이하*/
+@media (max-width:852px) {
+    header {
+        margin: 0 auto;
+        width: 100%;
+        height: 70px;
+        z-index: 5;
+        position: absolute;
+        top:10px;
+        left: 0;
+
+    }
+
+    header > #header-big {
+        width: 100%;
+        height: 70px;
+        z-index: 5;
+
+    }
+
+    header > #header-big > a > .logo {
+        float: left;
+        height: 70px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+
+
+    }
+
+    header > #header-big > a > .logo > img {
+        width: 100%;
+        height: 50%;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view {
+        float: right;
+        height: 70px;
+        width: 910px;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view > ul {
+        height: 70px;
+        width: 635px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view > ul > li > a {
+        text-decoration: none;
+        color: #FFFFFFB8;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view > ul > li > a:hover {
+        cursor: pointer;
+        color: white;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view > ul > li > a > .reserve {
+        height: 43px;
+        width: 155px;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+        font-size: 12px;
+        padding: 12px 24px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        letter-spacing: 1px;
+        z-index: 5;
+
+
+    }
+
+    header > #header-big > nav > ul > li > a > .reserve:hover {
+        color: black;
+        background-color: white;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .wide-view {
+        display: none;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .hamberger {
+        float: right;
+        width: 42px;
+        height: 42px;
+        margin: 14px;
+        z-index:10;
+
+    }
+
+    header > #header-big > .hamberger:hover {
+        cursor: pointer;
+        z-index: 5;
+
+    }
+
+    header > #header-big > .hamberger > img {
+        width: inherit;
+        height: inherit;
+        z-index:10;
+
+    }
+
+    header > .small-view {
+        float: left;
+        margin-top: 10px;
+        height: 200px;
+        z-index: 5;
+
+    }
+
+    header > .small-view > ul {
+        padding-left: 50px;
+        z-index: 5;
+
+
+    }
+
+    header > .small-view > ul > li {
+        margin: 5px;
+        z-index: 5;
+
+    }
+
+    header > .small-view > ul > li:hover {
+        cursor: pointer;
+
+    }
+}
